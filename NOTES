@@ -14,6 +14,12 @@ Clock summary at [2013-05-23 Thu 12:38]
 A python interface to libnettle, a low-level cryptographic library. PETAL is
 an acronym. It stands for People for the Ethical Treatment of ALgorithms.
 
+Nettle is included as a git submodule. Its original home is here[5].
+
+To checkout the submodule into the current tree, do:
+
+: git submodule update --init
+
 * Wrapping C source code in Python
 
 There is a very quick tutorial with code examples on creating wrappers for
@@ -57,3 +63,4 @@ here.[4]
 [2]: https://github.com/swig/swig
 [3]:
 [4]: http://ldots.org/pyrex-guide/
+[5]: http://git.lysator.liu.se/nettle
