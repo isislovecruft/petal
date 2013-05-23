@@ -1,0 +1,59 @@
+ -*- mode: org; -*-
+
+#+BEGIN: clocktable :maxlevel 2 :scope file
+Clock summary at [2013-05-23 Thu 12:38]
+
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+#+TITLE: PETAL
+#+DESCRIPTION:
+
+A python interface to libnettle, a low-level cryptographic library. PETAL is
+an acronym. It stands for People for the Ethical Treatment of ALgorithms.
+
+* Wrapping C source code in Python
+
+There is a very quick tutorial with code examples on creating wrappers for
+C/C++ in Python here.[0]
+
+* SWIG
+
+The first test I am going to try is with SWIG,[1] which I've never used before.
+
+** Getting Started
+We need to get SWIG and compile it.
+
+SWIG needs yodl2man to build its documentation. Make sure it's installed.
+
+I forked the SWIG repo[2] on Github and did:
+
+: git clone https://github.com/isislovecruft/swig.git
+: cd swig
+: ./autogen.sh && make && make check
+
+At which point it barfed a bit due to my having tons of weird Ruby versions
+from RVM. Ignored. Then:
+
+: sudo make install
+ 
+*** Makefile
+
+The first thing needed for SWIG is build declarations in a Makefile.
+
+
+* Pyrex
+
+The other likely candidate for writing wrappers for libnettle would be
+Pyrex.[3] A good tutorial on writing Python C-extensions with Pyrex is
+here.[4]
+
+
+* RESOURCES
+[0]: https://intermediate-and-advanced-software-carpentry.readthedocs.org/en/latest/c++-wrapping.html
+[1]: http://www.swig.org/index.php 
+[2]: https://github.com/swig/swig
+[3]:
+[4]: http://ldots.org/pyrex-guide/
