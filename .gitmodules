@@ -1,0 +1,3 @@
+[submodule "include/nettle"]
+	path = include/nettle
+	url = git://git.lysator.liu.se/nettle/nettle.git
