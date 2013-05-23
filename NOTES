@@ -47,7 +47,11 @@ from RVM. Ignored. Then:
  
 *** Makefile
 
-The first thing needed for SWIG is build declarations in a Makefile.
+The first thing needed for SWIG is build declarations in a Makefile, for the
+SWIG command to run, and a python setuptools/distutils/distribute command. Due
+to the recent merging of setuptools back into its parent project, distribute,
+as well as distribute being the only option out of the three which is
+supported by both Python2.x and Py3k, I would opt for distribute.
 
 
 * Pyrex
