@@ -1,0 +1,20 @@
+
+# PETAL (People for the Ethical Treatment of ALgorithms)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PETAL is a Python module for working with Nettle, a low-level C library of
+cryptographic primatives.
+
+Because algorithms are people too.
+
+**post scriptum**: This is a work in progress. Contributions welcome.
+
+### Dependencies
+
+PETAL requires the following non-Python dependencies:
+  * libnettle
+  * libcffi-dev
+  * python-dev
+  
+as well as these Python ones:
+  * cffi
